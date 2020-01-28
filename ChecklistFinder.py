@@ -39,7 +39,7 @@ class PDFcreate:
         print("Correct pages to print:")
         print(pagesToPrint)
         writer=PyPDF2.PdfFileWriter()
-        print("Usuwanie pustych znaków")
+        print("Deleting chars")
         try:
             for i in range(len(pagesToPrint)):
                 pagesToPrint.remove('')
@@ -53,7 +53,7 @@ class PDFcreate:
                 print("Strona", i)
                 writer.addPage(self.inputpdf.getPage(i))
             except Exception:
-                print("Error with last page, don't worry Iza :>")
+                print("Error with last page, //todo")
                 continue
         with open("output.pdf", "wb") as outfp:
             writer.write(outfp)
@@ -97,7 +97,7 @@ class PDFsearch:
                                             pagesToPrint[(rqIndex * 2)] = i
                                             pagesToPrint[(rqIndex * 2)+1]  = i + 1
                                             rqListIndex.append(rqIndex)
-                                            print("Dodano stronę", i)
+                                            print("Added page", i)
                                             break
                                     y = y + 1
                         except:
@@ -136,7 +136,7 @@ class pdfFrame(wx.Frame):
     def __init__(self):
         self.allPdf = PDFsearch.searchAllPDF(self)
         print("Debug window:")
-        super().__init__(parent=None, title="ChecklistFinder v.0.9")
+        super().__init__(parent=None, title="ChecklistFinder v.1.0")
         self.panel = wx.Panel(self, -1, style=wx.SUNKEN_BORDER)
         self.SetIcon(wx.Icon('assets/pdf.png'))
         pdfFrame.my_sizer = wx.BoxSizer(wx.VERTICAL)
