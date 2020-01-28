@@ -2,7 +2,7 @@
 > Checklistfinder to program, który jest wykorzystywany przeze mnie w pracy. Jego głownym zadaniem to znajdowanie unikatowych numerów i sortowanie stron według klucza w pliku PDF. Program przyśpiesza oraz ułatwia moją pracę podczas układania list kontrolnych na urządzeniach. 
 
 <p align="center">
-  <img src="https://i.imgur.com/cHcoHlI.png">
+  <img src="https://i.imgur.com/eCv5CHx.png">
 </p>
 
 # Opis problemu
