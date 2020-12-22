@@ -1,19 +1,15 @@
-# O aplikacji
-> Checklistfinder to program, który jest wykorzystywany przeze mnie w pracy. Jego głownym zadaniem to znajdowanie unikatowych numerów i sortowanie stron według klucza w pliku PDF. Program przyśpiesza oraz ułatwia moją pracę podczas układania list kontrolnych na urządzeniach. 
+# About application
+> Checklistfinder is a program that I used at work. Its main task is to find unique numbers and sort pages by key in a PDF file. The program speeds up and makes my work easier when I am putting checklists on the devices. 
 
-<p align="center">
-  <img src="https://i.imgur.com/eCv5CHx.png">
+<p>
+  <img src="assets/project2.png">
 </p>
 
-# Opis problemu
-> Urządzenia podczas importowania są układane losowo co utrudnia mi pracę. Gdy listy kontrolne są wydrukowane, moim zadaniem jest ułożenie odpowiednich list na urzadzenia. Podczas generowania pliku PDF z checklistami, nie jestem w stanie generować w taki sposób jak są ułożone urządzenia (są rozłożone bez jakiegokolwiek klucza).
+# Issue description
+> The devices are placed randomly during import, which makes my work difficult. When the checklists are printed, my task is to arrange the appropriate lists for the devices. When generating a PDF file with checklists, I am not able to generate the way the devices are arranged (they are unfolded using undefined key).
 
 # Działanie programu
-> Program zczytuje z pliku reqlist.txt wszystkie requesty na których będzie operował, lista jest sortowana względem importu urządzeń. Następnie program analizuje PDF i sprawdza czy każdy request z reqlist.txt zgadza się z tym w PDF. Gdy program stwierdzi, że wszystko działa przechodzi do sortowania. Powstaje nowy plik PDF, do którego są dodawane strony zaczerpniete poprzednio z pliku PDF, który został wygenerowany. Strony oczywiście są posortowane w takiej kolejności jak w pliku reqlist.txt. Na samym końcu program zamyka sie, a my otrzymujemy gotowy plik PDF, który jest posortowany względem importu. Po wydrukowaniu można rozłożyć checklisty w bardzo szybki sposób nie tracąc przy tym kilku godzin na szukanie w przypadku kiedy jest ponad 100 urządzeń.
+> The software reads from reqlist.txt all the requests on which it will operate, the list is sorted against the import of devices. Then the program analyzes the PDF and checks if each request from reqlist.txt matches it in PDF. When the program finds out that everything works, it goes to sorting. A new PDF file is created, to which pages taken previously from the PDF file that was generated are added. The pages are of course sorted in the same order as in reqlist.txt. At the very end, the program closes and we get the finished PDF file, which is sorted against the import. After printing, you can spread out the checklists very quickly without wasting a few hours on searching also if there are over 100 devices.
 
-# Cele
--  stworzenie uniwersalnego systemu pod wszystkie projekty,
--  optymalizacja programu.
-
-# Podsumowanie
-> Mój projekt zlikwidował jeden z większych problemów w firmie. Otrzymałem rekomendację od menegera za stworzenie programu i przyśpieszeniu procesu drukowania list kontrolnych.
+# Summary
+>  My project eliminated one of the biggest problems the in company. I received a recommendation from my manager for creating a program and speeding up the process of printing checklists in project.
